@@ -1,0 +1,28 @@
+{
+  "name": "contracts",
+  "version": "1.0.0",
+  "description": "DEEP BNB (DEEP) ERC-20 token with on-chain Agent ID airdrop — BNB Chain",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node compile.js",
+    "compile:mint": "node compile-mint.js",
+    "gas": "node measure-gas.js",
+    "gas:mint": "node measure-gas-mint.js",
+    "test:fork": "node test-fork.js",
+    "test:fork:mint": "node test-fork-mint.js",
+    "deploy-prep:mint": "node deploy-prep-mint.mjs",
+    "test:cap": "node test-cap-local.js",
+    "forwarder": "node rpc-forwarder.js 8546"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.6.1",
+    "solc": "^0.8.38"
+  },
+  "devDependencies": {
+    "ethers": "^6.17.0",
+    "ganache": "^7.9.2"
+  }
+}
